@@ -1,0 +1,108 @@
+:root {
+    --bs-primary: #5678ad; /* Este es el valor de $blue-400 en Bootstrap 5 */
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.invalid-feedback {
+    color: #fff !important;
+}
+
+.high-contrast .invalid-feedback {
+    color: #fff !important;
+}
+        .high-contrast .bg-primary {
+            background-color: #000 !important;
+        }
+        .high-contrast .form-control,
+        .high-contrast .form-select {
+            background-color: #333 !important;
+            color: #fff !important;
+            border-color: #fff !important;
+        }
+        .high-contrast .form-control:focus,
+        .high-contrast .form-select:focus {
+            border-color: #fff !important;
+            box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+        }
+        .high-contrast .form-check-input {
+            background-color: #333 !important;
+            border-color: #fff !important;
+        }
+        .high-contrast .form-check-input:checked {
+            background-color: #fff !important;
+            border-color: #fff !important;
+        }
+        .form-control.is-invalid,
+        .form-select.is-invalid {
+            border-color: #fff !important;
+        }
+        .form-control.is-invalid:focus,
+        .form-select.is-invalid:focus {
+            box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+        }
+        
+        .was-validated .form-control:invalid,
+        .was-validated .form-select:invalid {
+            border-color: #fff;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23ffffff'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23ffffff' stroke='none'/%3e%3c/svg%3e");
+        }
+
+        /* Estilo para el texto de la casilla de verificación */
+.form-check-label {
+    color: #fff !important;
+}
+
+/* Estilo para el mensaje de error de la casilla de verificación */
+.form-check .invalid-feedback {
+    color: #fff !important;
+}
+
+/* Estilo para la casilla de verificación cuando es válida */
+.was-validated .form-check-input:valid {
+    border-color: #198754; /* Color verde de Bootstrap */
+    background-color: #198754;
+}
+
+/* Estilo para el ícono de la casilla de verificación cuando es inválida */
+.was-validated .form-check-input:invalid ~ .form-check-label::before {
+    border-color: #fff;
+}
+
+/* Estilo para la casilla de verificación cuando es válida */
+.was-validated .form-check-input:valid {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+/* Estilo para el ícono de la casilla de verificación cuando es válida */
+.was-validated .form-check-input:valid ~ .form-check-label::before {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+/* Estilo para el ícono de verificación (checkmark) */
+.was-validated .form-check-input:valid:checked {
+    background-color: #198754;
+}
+/* Ajuste del color del checkmark para que sea visible en fondo verde */
+.was-validated .form-check-input:valid:checked::after {
+    border-color: #fff;
+}
+
+.high-contrast .form-check-label,
+.high-contrast .form-check .invalid-feedback {
+    color: #fff !important;
+}
+
+.high-contrast .was-validated .form-check-input:valid:checked {
+    background-color: #fff;
+}
+/* Mantenemos el verde para el modo de alto contraste, pero puedes cambiarlo si prefieres */
+.high-contrast .was-validated .form-check-input:valid,
+.high-contrast .was-validated .form-check-input:valid:checked {
+    border-color: #198754;
+    background-color: #198754;
+}
