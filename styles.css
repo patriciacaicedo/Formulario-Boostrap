@@ -1,5 +1,5 @@
 :root {
-    --bs-primary: #5678ad; /* Este es el valor de $blue-400 en Bootstrap 5 */
+    --bs-primary: #2d456e; /* Este es el valor de $blue-400 en Bootstrap 5 */
 }
 
 .bg-primary {
@@ -105,4 +105,54 @@
 .high-contrast .was-validated .form-check-input:valid:checked {
     border-color: #198754;
     background-color: #198754;
+}
+
+/* Estilos base */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Estilos para notebook (lg) */
+@media (min-width: 992px) {
+    .card {
+        padding: 2rem;
+    }
+}
+
+/* Estilos para tablet (md) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilos para celular de 7" (sm) */
+@media (max-width: 767.98px) {
+    .card {
+        padding: 1rem;
+    }
+    
+    h2.card-title {
+        font-size: 1.5rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 575.98px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    h2.card-title {
+        font-size: 1.3rem;
+    }
 }
